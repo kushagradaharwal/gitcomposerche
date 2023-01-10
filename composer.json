@@ -1,5 +1,5 @@
 {
-  "name": "Ooredoo/module-userordersacl",
+  "name": "ooredoo/module-userordersacl",
   "description": "Filter order grid on status basis",
   "type": "magento2-module",
   "version": "1.0.0",
