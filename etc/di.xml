@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+	<arguments>
+		<argument name="collections" xsi:type="array">
+			<item name="sales_order_grid_data_source" xsi:type="string">Ooredoo\UserOrdersacl\Model\ResourceModel\Order\Grid\Collection</item>
+		</argument>
+	</arguments>
+</type>
+<type name="Magento\User\Block\User\Edit\Tab\Main">
+        <plugin name="6d_user_form" type="Ooredoo\UserOrdersacl\Block\User\Edit\Tab\Main" sortOrder="1"/>
+</type>    
+<preference for="Magento\User\Model\User" type="Ooredoo\UserOrdersacl\Model\User" />
+<preference for="Magento\User\Api\Data\UserInterface" type="Ooredoo\UserOrdersacl\UserInterface" />
+<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+    <arguments>
+        <argument name="collections" xsi:type="array">
+            <item name="customer_listing_data_source" xsi:type="string">Ooredoo\UserOrdersacl\Model\ResourceModel\Customer\Grid\Collection</item>
+        </argument>
+    </arguments>
+</type>
+</config>
