@@ -2,6 +2,9 @@
   "name": "ooredoo/module-userordersacl",
   "description": "Filter order grid on status basis",
   "type": "magento2-module",
+  "minimum-stability" : "dev",
+"prefer-stable" : true,
+
   "version": "1.0.0",
   "license": [
     "OSL-3.0",
